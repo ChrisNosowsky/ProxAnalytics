@@ -12,3 +12,31 @@ html, body {
     background-color: #111111;
     color: white;
 }
+
+.home-inner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../src/assets/img/moon.jpg');
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;   
+}
+
+.caption {
+    color: white;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(300%);
+}
+
+.wrapper {
+    height: 100%;
+}
