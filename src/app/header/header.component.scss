@@ -1,14 +1,16 @@
 .navbar .navbar-brand {
     padding: 0 2rem 0 5rem;
-    font-family: $nunito;
     font-size: 32px;
 }
 
 .navbar {
-    padding: 1rem 20rem;
+    padding: 1rem 12rem;
 }
 
-.navbar-nav li {
-    padding-left:30px;
-    padding-right:30px;
-}
+.btn1 {
+    background-image: linear-gradient(90deg, #7133ec 0%, #854fee 100%);
+    text-align: center;
+    cursor: pointer;
+    border-radius: 16px;
+    font-size: 14px;
+  }
