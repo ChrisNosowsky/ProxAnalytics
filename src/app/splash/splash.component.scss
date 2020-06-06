@@ -1,0 +1,89 @@
+.big-img {
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 1024px;
+      
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+      
+    /* Set up positioning */
+    top: 0;
+    left: 0;
+  }
+
+
+.home-inner {
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;   
+}
+
+.rocket-inner {
+    height: 100%;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;   
+}
+
+.moon {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../assets/img/moon.jpg'); 
+}
+
+.rocket {
+    background-image: url('../../assets/img/rocket2.png'); 
+}
+
+.caption {
+    color: white;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(300%);
+}
+
+.wrapper {
+    height: 100%;
+}
+
+
+.typewriter {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden;
+    border-right: .15em solid rgb(255, 255, 255);
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: 
+        typing 2s steps(20, end),
+        blink-caret .5s step-end infinite;
+}
+  /* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 17% }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 255, 255) }
+}
+
+.purple-grad {
+    background-image: linear-gradient(0deg, #381b72 0%, #533394 100%);
+    min-height: 350px;
+    
+}

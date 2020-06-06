@@ -1,1 +1,60 @@
-<p>splash works!</p>
+<div class="conatiner-fluid wrapper" id="home">
+    <div class="home-inner moon">
+        <div class="caption text-center">
+          <h1 class="display-4">Prox Analytics</h1>
+          <div class="typewriter">
+            <h4>The Future is Now.</h4>
+          </div>
+        </div>
+    </div>
+</div>
+
+<div class="rocket-inner rocket">
+    <div class="container padding">
+        <div class="row">
+            <div class="col-md-8 offset-6" style="padding-top: 60px;">
+                <h1 class="display-4">REVOLUTIONIZING ANALYTICS</h1>
+                <p class="lead mt-3">We are tired of playing the guessing game. We want real time analytics that is meaningful as team managers. 
+                    With API support, we are able to give you all the data you want to manager your drivers, 
+                    view their stats by hour, day and year; All at the leisure of one screen.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 offset-6" style="padding-top: 60px;">
+                <img src="../../assets/img/testpic.jpg" alt="dashboard" style="max-width: 800px;">
+            </div>
+        </div>
+    </div>
+</div>
+  
+<div class="container-fluid purple-grad">
+    <div class="row"> 
+      <div class="col-md-6" style="margin-top: 6em;">
+        <h1 class="display-4">THE ULTIMATE IRACING TOOL</h1>
+        <p class="lead mt-3">
+          Compare laptimes, check drivers irating, check world records with a powerful query tool.
+          Effectively add and remove team members, look up other teams on the software and bring your team
+          to the top of our leaderboards!
+        </p>
+      </div>
+      <div class="col-md-6">
+        
+      </div>
+    </div>
+</div>
+  
+  <div class="mt-3">
+    <button class="btn btn-dark" (click)="sayHi()">Say Hi</button>
+    <span class="ml-4">Server data: {{serverData | json}}</span>
+  </div>
+  
+  <div class="mt-3">
+    <button class="btn btn-dark" (click)="getAllEmployees()">All Employees</button>
+    <span class="ml-4">iRacer data: {{employeeData | json}}</span>
+  </div>
+  
+  <div class="mt-3">
+    <button class="btn btn-sm btn-dark" (click)="getEmployee()">Employees By ID</button>
+    <span class="ml-4">Employee data: {{employee | json}}</span>
+  </div>
