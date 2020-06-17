@@ -8,13 +8,15 @@ import { SplashComponent } from './splash/splash.component';
 import { HttpClientModule } from '@angular/common/http';
 
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    SplashComponent
+    SplashComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
