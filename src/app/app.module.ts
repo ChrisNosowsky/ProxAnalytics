@@ -7,6 +7,8 @@ import { FooterComponent } from './footer/footer.component';
 import { SplashComponent } from './splash/splash.component';
 import { HttpClientModule } from '@angular/common/http';
 
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    MDBBootstrapModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
