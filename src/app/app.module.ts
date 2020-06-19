@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { LoginComponent } from './login/login.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { LoginComponent } from './login/login.component';
     HeaderComponent,
     FooterComponent,
     SplashComponent,
-    LoginComponent
+    LoginComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
