@@ -42,19 +42,94 @@
             <div class="col-md-12">
                 <p>Current Team: Proximity Racing</p>
                 <p>Rank: Administrator</p>
-            </div>
-            
+            </div> 
         </div>
 
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card card-style">
+        <div class="row mb-4">
+            <div class="col-md-3 margin-gap">
+                <div class="card card-style card-md">
                     <div class="card-body">
-                      <h5 class="card-title">Team Rank  </h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Platinum</h6>
-                      <h2 class="card-text text-center">8th</h2>
-                      <a href="#" class="card-link">Card link</a>
-                      <a href="#" class="card-link">Another link</a>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5 class="card-title">Team Rank</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Platinum</h6>
+                                <h1 class="card-text mt-2" style="font-size: 45px;">166th</h1>
+                                <br>
+                                <a href="#" class="card-link">Leaderboard</a>
+                            </div>
+                            <div class="col-md-3 pull-right mt-5">
+                                <img class="pull-right" src="../../assets/img/platinum.png" width="90px;"/>
+                            </div>
+                        </div>
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 margin-gap">
+                <div class="card card-style card-md">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h5 class="card-title">Official Stats - 2020</h5>
+                                <div style="display: block">
+                                    <canvas mdbChart
+                                        [chartType]="chartType"
+                                        [datasets]="chartDatasets"
+                                        [labels]="chartLabels"
+                                        [colors]="chartColors"
+                                        [options]="chartOptions"
+                                        [legend]="true"
+                                        (chartHover)="chartHovered($event)"
+                                        (chartClick)="chartClicked($event)">
+                                    </canvas>
+                                  </div>
+                            </div>
+                        </div>
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2" style="margin-right: 1.5rem;">
+                <div class="card card-style card-sm">
+                    <div class="row text-center">
+                        <div class="col-md-12 text-center mt-1">
+                            <img class="mb-2" src="../../assets/img/helmet.png" width="60px;"/>
+                            <h6 class="card-subtitle text-muted">Drivers</h6>
+                            <h4 class="card-title mb-2 mt-1">16</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card card-style card-sm">
+                    <div class="row text-center">
+                        <div class="col-md-12 text-center mt-1">
+                            <img class="mb-2" src="../../assets/img/helmet.png" width="60px;"/>
+                            <h6 class="card-subtitle text-muted">Board Members</h6>
+                            <h4 class="card-title mb-2 mt-1">6</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 mb-5 margin-gap">
+                <div class="card card-style card-lg">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div style="display: block">
+                                <canvas mdbChart
+                                    [chartType]="chartLineType"
+                                    [datasets]="chartLineDatasets"
+                                    [labels]="chartLineLabels"
+                                    [colors]="chartLineColors"
+                                    [options]="chartLineOptions"
+                                    [legend]="true"
+                                    (chartHover)="chartLineHovered($event)"
+                                    (chartClick)="chartLineClicked($event)">
+                                </canvas>
+                                </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -20,3 +20,13 @@ html, body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+a {
+    color: #9f42ca;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: #7400a1;
+    text-decoration: underline;
+}

@@ -36,11 +36,28 @@
 }
 
 .card-style {
-    width: 18rem;
     background-color: rgb(41, 41, 46);
     box-shadow: -7px 0px 5px 3px rgba(49, 49, 49, 0.2);
 }
 
+.card-lg {
+    width: 38.4rem;
+    min-height: 20rem;
+}
+
+.card-md {
+    width: 18rem;
+    min-height: 13rem;
+}
+
+.card-sm {
+    width: 11rem;
+    height: 8rem;
+}
+
+.margin-gap {
+    margin-right: 2.5rem;
+}
 
 @media screen and (min-width: 600px) {
     .side-nav {
