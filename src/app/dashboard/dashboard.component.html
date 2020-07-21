@@ -113,7 +113,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-3 mb-5 margin-gap">
+            <div class="col-md-6 mb-5 margin-gap">
                 <div class="card card-style card-lg">
                     <div class="row">
                         <div class="col-md-12">
@@ -128,7 +128,27 @@
                                     (chartHover)="chartLineHovered($event)"
                                     (chartClick)="chartLineClicked($event)">
                                 </canvas>
-                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5 margin-gap">
+                <div class="card card-style card-md">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div style="display: block">
+                                <canvas mdbChart
+                                    [chartType]="chartType"
+                                    [datasets]="chartDatasets"
+                                    [labels]="chartLabels"
+                                    [colors]="chartColors"
+                                    [options]="chartOptions"
+                                    [legend]="true"
+                                    (chartHover)="chartHovered($event)"
+                                    (chartClick)="chartClicked($event)">
+                                </canvas>
+                              </div>
                         </div>
                     </div>
                 </div>
