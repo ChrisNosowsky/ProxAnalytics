@@ -82,21 +82,28 @@ export class DashboardComponent implements OnInit {
   
 
   public chartDoughnutDatasets: Array<any> = [
-    { data: [300, 50, 100, 40, 120], label: 'My First dataset' }
+    { data: [0, 13, 2, 1, 0, 0], label: 'Class Ranks' }
   ];
 
-  public chartDoughnutLabels: Array<any> = ['Red', 'Green', 'Yellow', 'Grey', 'Dark Grey'];
+  public chartDoughnutLabels: Array<any> = ['Pro', 'A', 'B', 'C', 'D', 'Rookie'];
 
   public chartDoughnutColors: Array<any> = [
     {
-      backgroundColor: ['#F7464A', '#46BFBD', '#FDB45C', '#949FB1', '#4D5360'],
-      hoverBackgroundColor: ['#FF5A5E', '#5AD3D1', '#FFC870', '#A8B3C5', '#616774'],
-      borderWidth: 2,
+      backgroundColor: ['#000000', '#3437eb', '#00d12d', '#fffb00', '#dea300', '#d90000'],
+      hoverBackgroundColor: ['#9f42ca', '#9f42ca', '#9f42ca', '#9f42ca', '#9f42ca', '#9f42ca'],
+      borderWidth: 1,
     }
   ];
 
   public chartDoughnutOptions: any = {
-    responsive: true
+    responsive: true,
+    legend: {
+      position: 'right',
+      labels: {
+        boxWidth: 10,
+        usePointStyle: true,
+      },
+    }
   };
   public chartDoughnutClicked(e: any): void { }
   public chartDoughnutHovered(e: any): void { }
