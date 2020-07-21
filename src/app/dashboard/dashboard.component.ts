@@ -98,7 +98,6 @@ export class DashboardComponent implements OnInit {
   public chartDoughnutOptions: any = {
     responsive: true,
     legend: {
-      position: 'right',
       labels: {
         boxWidth: 10,
         usePointStyle: true,

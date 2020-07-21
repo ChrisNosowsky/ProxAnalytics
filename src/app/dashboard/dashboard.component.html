@@ -95,7 +95,7 @@
                         <div class="col-md-12 text-center mt-1">
                             <img class="mb-2" src="../../assets/img/helmet.png" width="60px;"/>
                             <h6 class="card-subtitle text-muted">Drivers</h6>
-                            <h4 class="card-title mb-2 mt-1">16</h4>
+                            <h4 class="card-title mb-2 mt-1" id="primary">16</h4>
                         </div>
                     </div>
                 </div>
@@ -106,7 +106,7 @@
                         <div class="col-md-12 text-center mt-1">
                             <img class="mb-2" src="../../assets/img/helmet.png" width="60px;"/>
                             <h6 class="card-subtitle text-muted">Board Members</h6>
-                            <h4 class="card-title mb-2 mt-1">6</h4>
+                            <h4 class="card-title mb-2 mt-1" id="primary">6</h4>
                         </div>
                     </div>
                 </div>
@@ -134,11 +134,13 @@
                 </div>
             </div>
             <div class="col-md-4 mb-5" style="margin-left: 2.7rem;">
-                <div class="card card-style card-md">
+                <div class="card card-style card-md" style="width: 24rem; height: 20rem;">
                     <div class="row">
                         <div class="col-md-12">
-                            <h4 class='text-center'>Class Rank</h4>
-                            <div style="display: block">
+                            <h4 class='text-center mb-4'>The Numbers</h4>
+                        </div>
+                        <div class="col-md-5">
+                            <div style="display: block; width: 230px;">
                                 <canvas mdbChart
                                     height="296px"
                                     [chartType]="chartDoughnutType"
@@ -151,6 +153,10 @@
                                     (chartClick)="chartDoughnutClicked($event)">
                                 </canvas>
                               </div>
+                        </div>
+                        <div class="col-md-5 ml-5">
+                            <p class='ml-2' style="font-size: 12px;">Average iRating:<br><b style="font-size: 20px;" id="primary"> 2604</b></p>
+                            <p class='ml-2' style="font-size: 12px;">Average Safety Rating:<b style="font-size: 20px;" id="primary"> 3.23</b></p>
                         </div>
                     </div>
                 </div>
