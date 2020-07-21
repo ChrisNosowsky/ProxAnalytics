@@ -139,14 +139,14 @@
                         <div class="col-md-12">
                             <div style="display: block">
                                 <canvas mdbChart
-                                    [chartType]="chartType"
-                                    [datasets]="chartDatasets"
-                                    [labels]="chartLabels"
-                                    [colors]="chartColors"
-                                    [options]="chartOptions"
+                                    [chartType]="chartDoughnutType"
+                                    [datasets]="chartDoughnutDatasets"
+                                    [labels]="chartDoughnutLabels"
+                                    [colors]="chartDoughnutColors"
+                                    [options]="chartDoughnutOptions"
                                     [legend]="true"
-                                    (chartHover)="chartHovered($event)"
-                                    (chartClick)="chartClicked($event)">
+                                    (chartHover)="chartDoughnutHovered($event)"
+                                    (chartClick)="chartDoughnutClicked($event)">
                                 </canvas>
                               </div>
                         </div>

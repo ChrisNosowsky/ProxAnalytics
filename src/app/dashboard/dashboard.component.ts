@@ -13,6 +13,8 @@ export class DashboardComponent implements OnInit {
   }
 
   public chartType: string = 'bar';
+  public chartDoughnutType: string = 'doughnut';
+  public chartLineType: string = 'line';
 
   public chartDatasets: Array<any> = [
     { data: [5, 10, 22, 4], label: '' }
@@ -45,7 +47,7 @@ export class DashboardComponent implements OnInit {
     }
   };
 
-  public chartLineType: string = 'line';
+  
 
   public chartLineDatasets: Array<any> = [
     { data: [65, 59, 80, 81, 56, 55, 40], label: 'My First dataset' },
@@ -76,5 +78,27 @@ export class DashboardComponent implements OnInit {
 
   public chartLineClicked(e: any): void { }
   public chartLineHovered(e: any): void { }
+
+  
+
+  public chartDoughnutDatasets: Array<any> = [
+    { data: [300, 50, 100, 40, 120], label: 'My First dataset' }
+  ];
+
+  public chartDoughnutLabels: Array<any> = ['Red', 'Green', 'Yellow', 'Grey', 'Dark Grey'];
+
+  public chartDoughnutColors: Array<any> = [
+    {
+      backgroundColor: ['#F7464A', '#46BFBD', '#FDB45C', '#949FB1', '#4D5360'],
+      hoverBackgroundColor: ['#FF5A5E', '#5AD3D1', '#FFC870', '#A8B3C5', '#616774'],
+      borderWidth: 2,
+    }
+  ];
+
+  public chartDoughnutOptions: any = {
+    responsive: true
+  };
+  public chartDoughnutClicked(e: any): void { }
+  public chartDoughnutHovered(e: any): void { }
 
 }
